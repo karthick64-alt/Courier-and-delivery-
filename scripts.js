@@ -381,8 +381,27 @@ function initAuthModal() {
     if (!form) return;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      // Check terms and conditions for signup
+      if (id === 'signup-form') {
+        const termsCheckbox = form.querySelector('#signup-terms');
+        if (!termsCheckbox.checked) {
+          showToast('Please agree to the Terms and Conditions to continue.', 'error');
+          return;
+        }
+      }
+      
       showToast('Form submitted (demo only, no backend).', 'success');
       form.reset();
+    });
+  });
+
+  // Social auth buttons
+  const socialButtons = modal.querySelectorAll('[data-social-auth]');
+  socialButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const provider = btn.getAttribute('data-social-auth');
+      showToast(`Social login with ${provider.charAt(0).toUpperCase() + provider.slice(1)} (demo only).`, 'info');
     });
   });
 }

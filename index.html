@@ -711,56 +711,56 @@
               <div class="partner-logos">
                 <div class="partner-logo">
                   <img
-                    src=""
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=Shopify"
                     alt="Shopify logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=Woo"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=WooCommerce"
                     alt="WooCommerce logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=Amazon"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=Amazon"
                     alt="Amazon logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=eBay"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=eBay"
                     alt="eBay logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=Flipkart"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=Flipkart"
                     alt="Flipkart logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=Etsy"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=Etsy"
                     alt="Etsy logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=Walmart"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=Walmart"
                     alt="Walmart logo"
                     loading="lazy"
                   />
                 </div>
                 <div class="partner-logo">
                   <img
-                    src="https://via.placeholder.com/120x40?text=BigComm"
+                    src="https://placehold.co/120x40/95A3B8/FFFFFF?text=BigCommerce"
                     alt="BigCommerce logo"
                     loading="lazy"
                   />
@@ -777,17 +777,17 @@
           <header class="section-header section-header-center">
             <h2>FAQ &amp; help center</h2>
             <p>Find quick answers or search our knowledge base.</p>
-          </header>
-          <div class="faq-layout">
-            <aside class="faq-sidebar">
+            <div class="faq-search-wrapper">
               <input
                 id="faq-search"
                 type="search"
-                class="input input-sm"
+                class="input"
                 placeholder="Search FAQs..."
                 aria-label="Search FAQs"
               />
-            </aside>
+            </div>
+          </header>
+          <div class="faq-layout">
             <div class="faq-accordion" id="faq-list">
               <article class="faq-item" data-faq>
                 <button
@@ -1151,6 +1151,28 @@
               />
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
+            
+            <div class="auth-divider">
+              <span>or</span>
+            </div>
+            
+            <div class="social-auth">
+              <button type="button" class="btn btn-social btn-google" data-social-auth="google">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill="#4285F4"/>
+                  <path d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z" fill="#34A853"/>
+                  <path d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.348 6.175 0 7.55 0 9s.348 2.825.957 4.039l3.007-2.332z" fill="#FBBC05"/>
+                  <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.293C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/>
+                </svg>
+                Continue with Google
+              </button>
+              <button type="button" class="btn btn-social btn-facebook" data-social-auth="facebook">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 9c0-4.97-4.03-9-9-9S0 4.03 0 9c0 4.42 3.258 8.137 7.608 8.807v-6.23H5.31V9h2.298V7.02c0-2.27 1.353-3.524 3.421-3.524.99 0 2.027.177 2.027.177v2.23h-1.142c-1.125 0-1.476.698-1.476 1.414V9h2.51l-.401 2.577h-2.109v6.23C14.742 17.137 18 13.42 18 9z" fill="#1877F2"/>
+                </svg>
+                Continue with Facebook
+              </button>
+            </div>
           </form>
 
           <form
@@ -1190,7 +1212,40 @@
                 required
               />
             </div>
+            <div class="form-field">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="signup-terms"
+                  name="terms"
+                  required
+                />
+                <span>I agree to the <a href="#" target="_blank">Terms and Conditions</a></span>
+              </label>
+            </div>
             <button type="submit" class="btn btn-primary">Sign up</button>
+            
+            <div class="auth-divider">
+              <span>or</span>
+            </div>
+            
+            <div class="social-auth">
+              <button type="button" class="btn btn-social btn-google" data-social-auth="google">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" fill="#4285F4"/>
+                  <path d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z" fill="#34A853"/>
+                  <path d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.348 6.175 0 7.55 0 9s.348 2.825.957 4.039l3.007-2.332z" fill="#FBBC05"/>
+                  <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.293C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/>
+                </svg>
+                Continue with Google
+              </button>
+              <button type="button" class="btn btn-social btn-facebook" data-social-auth="facebook">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 9c0-4.97-4.03-9-9-9S0 4.03 0 9c0 4.42 3.258 8.137 7.608 8.807v-6.23H5.31V9h2.298V7.02c0-2.27 1.353-3.524 3.421-3.524.99 0 2.027.177 2.027.177v2.23h-1.142c-1.125 0-1.476.698-1.476 1.414V9h2.51l-.401 2.577h-2.109v6.23C14.742 17.137 18 13.42 18 9z" fill="#1877F2"/>
+                </svg>
+                Continue with Facebook
+              </button>
+            </div>
           </form>
 
           <form
